@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+body,h1,h2,p,div{
+    width:100%;
+    margin: 0 auto;
+    padding:0;
+}
+body{
+    background-color:#ffff00;
+}
+/* ------------------------------header--------------------------------- */
+/* PlayerとComの表示について */
+header{
+    display: flex;
+}
+header div p{
+    margin-bottom:10px;
+}
+header .h_p p:first-child,header .h_c p:first-child{
+    font-weight: bold;
+    font-size:1.25rem;
+}
+header .h_p,header .h_c{
+    width: 50%;
+    text-align: center;
+}
+/* --------------------------main---------------------------------------- */
+/* 「じゃんけんする」ボタンの表示 */
+.start_btn{
+    margin: 80px auto;
+    display: block;
+    height: 50px;
+    width: 200px;
+}
+/* 「※5秒以内に選択しないと自動的に負けになりますの表示」 */
+.game_start .important{
+    text-decoration: underline;
+}
+/* ねえ、じゃんけんしようよ～の表示 */
+#main_title{
+    padding-top:50px;
+    margin-bottom:30px;
+}
+/* 「ルール:「じゃんけん」で、先に3勝したほうが勝ちのシンプルなゲーム。」の表示 */
+.rule{
+    margin-bottom:20px;
+}
+.rule span,.important span{
+    color:#ff8000;
+    font-weight:bold;
+}
+.game_start{
+    background-color: aqua;
+    text-align: center;
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+#countdown{
+    color:#ff0080;
+    font-size:2rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+#jannkennpon{
+    padding-top: 50px;
+    margin-bottom:100px;
+}
+.battle .player h2{
+    padding-bottom: 20px;
+    color:#ff8000;
+}
+.battle .player .janken{
+    width:100px;
+    height: 50px;
+    display: inline-block;
+    margin-right:20px;
+}
+.player,.h_p,.h_c{
+    width:100%;
+}
+.player{
+    text-align: center;
+}
+.result{
+    display: block;
+    text-align: center;
+    margin:auto;
+}
+.resultmenu{
+    display: flex;
+    position: relative;
+}
+.resultmenu h2{
+    margin-bottom: 10px;
+    color:#ff8000;
+}
+/* 出し手の表示 */
+.resultmenu #p_judge,.resultmenu #c_judge{
+    color:#00bfff;
+    font-size:1.5rem;
+    font-weight:bold;
+}
+.next_btn{
+    position: absolute;
+    top: 150%;
+    left: 43%;
+    width: 150px;
+    height: 35px;
+}
+#top_btn{
+    display: inline-block;
+    width: 150px;
+    position: absolute;
+    height:35px;
+    top: 100%;
+    left: 40%;
+}

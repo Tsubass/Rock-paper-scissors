@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>ねえ、じゃんけんしようよ～</title>
+    </head>
+  <body>
+    <header>
+        <div class="h_p">
+            <p>Player</p>
+            <p>win:0</p>
+            <p>lose:0</p>
+        </div>
+        <div class="h_c">
+            <p>Com</p>
+            <p>win:0</p>
+            <p>lose:0</p>
+        </div>
+    </header>
+    <main>
+    <div class="game_start">
+            <h1 id="main_title">ねえ、じゃんけんしようよ～</h1>
+            <p class="rule">ルール：「じゃんけん」で、先に<span>3勝</span>したほうが勝ちのシンプルなゲーム。</p>
+            <p class="rule important">※<span>5秒以内</span>に選択しないと自動的に負けになります。</p>
+            <button class="start_btn">じゃんけんする</button>
+        <div class="p_select">
+            <h1 id="jannkennpon">じゃん、けん...</h1>
+            <p id="countdown"></p>
+            <div class="battle">
+                <div class="player">
+                    <h2>player</h2>
+                    <button class="janken">グー</button>
+                    <button class="janken">チョキ</button>
+                    <button class="janken">パー</button>
+                </div>
+                <div class="resultmenu">
+                    <div class="r_player">
+                    <h2>player</h2>
+                        <p id="p_judge"></p>
+                    </div>
+                    <div class="r_com">
+                        <h2>com</h2>
+                        <p id="c_judge"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/script.js"></script>
+  </body>
+</html>
